@@ -25,7 +25,7 @@ Verify everything is working by navigating to `http://localhost` where the `inde
 ## Architecture:
 
 ```
---- worker_proxy (port 80)
+--- proxy (port 80)
     ├── worker_1 (port 3000)
     ├── worker_2 (port 3000)
     └── worker_3 (port 3000)
@@ -37,7 +37,7 @@ Verify everything is working by navigating to `http://localhost` where the `inde
 ├── README.md
 ├── docker
 │   └── nginx
-│       ├── load_balancer
+│       ├── proxy
 │       │   ├── Dockerfile
 │       │   └── nginx.conf
 │       └── worker

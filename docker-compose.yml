@@ -25,9 +25,9 @@ services:
     volumes:
       - ./web:/web
 
-  worker_proxy:
+  proxy:
     build:
-      context: ./docker/nginx/load_balancer
+      context: ./docker/nginx/proxy
     ports:
       - 80:80
     links:
